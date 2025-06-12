@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFinal.Views.AgendarConversacionPage"
+             Title="Agendar Conversación"
+             BackgroundColor="#FFFFFF">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Agendar Conversación"
+               FontSize="24"
+               HorizontalOptions="Center"
+               TextColor="#6441A5"/>
+
+        <Label Text="Nombre del alumno" TextColor="#1F1F1F"/>
+        <Entry x:Name="nombreEntry"
+               Placeholder="Ingresa tu nombre"
+               BackgroundColor="#F5F5F5"
+               TextColor="#1F1F1F"/>
+
+        <Entry x:Name="apellidoEntry"
+               Placeholder="Ingresa tu apellido"
+               BackgroundColor="#F5F5F5"
+               TextColor="#1F1F1F"/>
+
+        <Label Text="Fecha" TextColor="#1F1F1F"/>
+        <DatePicker x:Name="fechaPicker"
+                    BackgroundColor="#F5F5F5"
+                    TextColor="#1F1F1F"/>
+
+        <Label Text="Hora" TextColor="#1F1F1F"/>
+        <TimePicker x:Name="horaPicker"
+                    BackgroundColor="#F5F5F5"
+                    TextColor="#1F1F1F"/>
+
+        <Button Text="Agendar"
+                BackgroundColor="#DA73C3"
+                TextColor="White"
+                CornerRadius="15"
+                FontAttributes="Bold"
+                Clicked="OnAgendarClicked"/>
+
+        <Label x:Name="confirmacionLabel"
+               Text=""
+               TextColor="#1F1F1F"
+               FontAttributes="Italic"
+               HorizontalOptions="Center"
+               Margin="10"/>
+    </VerticalStackLayout>
+</ContentPage>

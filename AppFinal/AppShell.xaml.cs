@@ -1,4 +1,5 @@
-﻿namespace AppFinal
+﻿using AppFinal.Views;
+namespace AppFinal
 {
     public partial class AppShell : Shell
     {
@@ -10,7 +11,8 @@
             Routing.RegisterRoute(nameof(ListadoAlumnos), typeof(ListadoAlumnos));
             Routing.RegisterRoute(nameof(Alumno), typeof(Alumno));
             Routing.RegisterRoute(nameof(InicioPage), typeof(InicioPage));
-            //Routing.RegisterRoute(nameof(MenuPage), typeof(MenuPage));
+            Routing.RegisterRoute(nameof(MenuPage), typeof(MenuPage));
+            Routing.RegisterRoute(nameof(AgendarConversacionPage), typeof(AppFinal.Views.AgendarConversacionPage));
         }
     }
 }

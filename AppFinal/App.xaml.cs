@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using System.Runtime.Versioning; // Asegúrate de incluir este espacio de nombres
 using AppFinal.ViewModels;
 using AppFinal.Views;
 using AppFinal.Services;
@@ -9,7 +10,8 @@ namespace AppFinal
     {
         public static IServiceProvider Services { get; private set; }
 
-        public new static App Current => (App)Application.Current;
+        [SupportedOSPlatform("android21.0")]
+        public new static App? Current => Application.Current as App;
 
         public App()
         {
@@ -17,7 +19,7 @@ namespace AppFinal
             Services = ConfigureServices(services);
 
             InitializeComponent();
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new MenuPage());
         }
 
         private static IServiceProvider ConfigureServices(ServiceCollection services)
