@@ -6,11 +6,19 @@
     xmlns:local="clr-namespace:AppFinal"
     xmlns:vi="clr-namespace:AppFinal.Views"
     Shell.FlyoutBehavior="Disabled"
-    Title="AppFinal">
+    Title="The Speak Now CLub">
+
+    <!-- Pantalla inicial -->
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate vi:ListadoAlumnos}"
-        Route="ListadoAlumnos" />
+        Title="Inicio"
+        ContentTemplate="{DataTemplate vi:InicioPage}"
+        Route="InicioPage" />
 
+    <!-- Rutas a otras páginas -->
+<!--
+    <ShellContent Title="Menú"
+                  ContentTemplate="{DataTemplate vi:MenuPage}"
+                  Route="MenuPage" />
+    -->
 </Shell>

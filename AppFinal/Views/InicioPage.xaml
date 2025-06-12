@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFinal.Views.InicioPage"
+             BackgroundColor="#FFF7F1"
+             Title="Bienvenido">
+
+    <VerticalStackLayout Padding="30" Spacing="25"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+
+        <Image Source="thespeaknowcub.jpg"
+               WidthRequest="200"
+               HeightRequest="200"
+               Aspect="AspectFit"/>
+
+        <Label Text="The Speak Now Club"
+               FontSize="24"
+               TextColor="#5A4B81"
+               HorizontalOptions="Center"/>
+
+        <Button Text="Entrar"
+                FontSize="18"
+                BackgroundColor="#5A4B81"
+                TextColor="White"
+                Clicked="Entrar_Clicked"
+                CornerRadius="10"
+                Padding="10,5"/>
+    </VerticalStackLayout>
+</ContentPage>
