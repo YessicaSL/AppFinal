@@ -40,7 +40,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#6441A5" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#9880e5" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\thespeaknowcub.jpg" Resize="True" BaseSize="300,185" />

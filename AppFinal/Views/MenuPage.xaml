@@ -6,11 +6,18 @@
              BackgroundColor="#FFF6F0">
 
     <VerticalStackLayout Padding="20" Spacing="25" VerticalOptions="Center">
+        <!-- LOGO -->
+        <Image Source="thespeaknowcub.png"
+               HeightRequest="120"
+               HorizontalOptions="Center" />
+
+        <!--Titulo-->
         <Label Text="The Speak Now Club"
                FontSize="32"
                HorizontalOptions="Center"
                TextColor="#1F1F1F"/>
 
+        <!--Botones del menú-->
         <Button Text="📋 Registrar Alumno"
                 FontSize="18"
                 BackgroundColor="#5A4B81"
